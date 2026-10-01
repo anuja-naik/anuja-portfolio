@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Anuja Naik — AI/ML Engineer in the making</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{color-scheme:dark;--bg:#07090f;--bg2:#0c1018;--card:rgba(255,255,255,.035);--line:rgba(255,255,255,.09);--tx:#e8ecf4;--mu:#97a1b5;--ac:#7cf0d4;--ac2:#8b7cff;--sans:'Space Grotesk',system-ui,-apple-system,'Segoe UI',sans-serif;--mono:'JetBrains Mono',ui-monospace,Menlo,Consolas,monospace;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-behavior:smooth;scroll-padding-top:calc(72px + env(safe-area-inset-top,0px))}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font-family:var(--sans);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;background:radial-gradient(60% 50% at 80% -10%,rgba(139,124,255,.18),transparent 70%),radial-gradient(50% 40% at 0% 20%,rgba(124,240,212,.10),transparent 70%)}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;backdrop-filter:blur(14px);background:rgba(7,9,15,.7);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;justify-content:space-between;align-items:center;height:60px}
+.logo{font-family:var(--mono);font-size:14px;color:var(--ac)}
+nav ul{display:flex;gap:26px;list-style:none;margin:0;padding:0;font-size:14px;color:var(--mu)}
+nav ul a:hover{color:var(--tx)}
+@media(max-width:700px){nav ul{display:none}}
+section{padding:96px 0 0}
+.eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--ac);margin-bottom:14px}
+h2{font-size:clamp(28px,4vw,40px);line-height:1.15;margin:0 0 14px;letter-spacing:-.02em}
+.lead{color:var(--mu);max-width:640px;margin:0 0 40px}
+.hero{padding-top:88px}
+.tag{display:inline-flex;align-items:center;gap:8px;font-family:var(--mono);font-size:12px;color:var(--mu);border:1px solid var(--line);border-radius:99px;padding:6px 14px;background:var(--card)}
+.tag i{width:7px;height:7px;border-radius:50%;background:var(--ac);box-shadow:0 0 10px var(--ac)}
+h1{font-size:clamp(46px,9vw,100px);line-height:.95;letter-spacing:-.04em;margin:26px 0 22px;font-weight:700}
+h1 span{background:linear-gradient(100deg,var(--ac),var(--ac2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.pos{font-size:clamp(18px,2.2vw,24px);color:#c7cfdf;max-width:720px;margin:0 0 32px}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{padding:12px 22px;border-radius:10px;font-size:14px;font-weight:500;border:1px solid var(--line);transition:.2s}
+.btn.p{background:linear-gradient(100deg,var(--ac),#9fb4ff);color:#06100e;border:0}
+.btn:hover{transform:translateY(-2px);border-color:rgba(124,240,212,.5)}
+.path{display:flex;flex-wrap:wrap;gap:0;margin-top:56px;font-family:var(--mono);font-size:12px}
+.path div{padding:10px 16px;border:1px solid var(--line);margin:0 -1px -1px 0;color:var(--mu);background:var(--card);position:relative}
+.path div:first-child{border-radius:10px 0 0 10px}
+.path div:last-child{border-radius:0 10px 10px 0;color:var(--ac);border-color:rgba(124,240,212,.45);box-shadow:0 0 24px rgba(124,240,212,.12)}
+.path small{display:block;font-size:10px;opacity:.6}
+.grid{display:grid;gap:18px}
+.g2{grid-template-columns:repeat(2,1fr)}.g3{grid-template-columns:repeat(3,1fr)}
+@media(max-width:820px){.g2,.g3{grid-template-columns:1fr}}
+.card{border:1px solid var(--line);background:var(--card);border-radius:16px;padding:26px;transition:.25s}
+.card:hover{border-color:rgba(124,240,212,.35);transform:translateY(-3px)}
+.proj{display:flex;flex-direction:column}
+.proj .k{font-family:var(--mono);font-size:11px;color:var(--ac2);letter-spacing:.08em;text-transform:uppercase}
+.proj h3{margin:8px 0 10px;font-size:21px;letter-spacing:-.01em}
+.proj p{color:var(--mu);font-size:15px;margin:0 0 14px}
+.proj ul{margin:0 0 18px;padding-left:18px;color:#b9c2d4;font-size:14px}
+.proj li{margin-bottom:6px}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:auto}
+.chips span{font-family:var(--mono);font-size:11px;padding:4px 10px;border-radius:99px;background:rgba(255,255,255,.05);color:#b9c2d4}
+.links{display:flex;gap:16px;margin-top:16px;font-size:13px;font-family:var(--mono)}
+.links a{color:var(--ac);border-bottom:1px solid transparent}.links a:hover{border-color:var(--ac)}
+.feat{grid-column:1/-1}
+.badge{display:inline-block;font-size:11px;font-family:var(--mono);color:#06100e;background:var(--ac);padding:3px 10px;border-radius:99px;margin-left:8px;vertical-align:middle}
+.flow{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:6px 0 18px;font-family:var(--mono);font-size:12px;color:#c7cfdf}
+.flow b{font-weight:500;padding:6px 12px;border:1px dashed rgba(139,124,255,.5);border-radius:8px}
+.flow em{color:var(--ac);font-style:normal}
+.sk h4{margin:0 0 12px;font-size:13px;font-family:var(--mono);color:var(--ac);font-weight:500;letter-spacing:.06em;text-transform:uppercase}
+.sk .chips span{font-size:12px}
+.tl{border-left:1px solid var(--line);margin-left:6px;padding-left:28px}
+.tl .it{position:relative;margin-bottom:30px}
+.tl .it::before{content:"";position:absolute;left:-34px;top:8px;width:11px;height:11px;border-radius:50%;background:var(--bg);border:2px solid var(--ac)}
+.tl .when{font-family:var(--mono);font-size:12px;color:var(--mu)}
+.tl h3{margin:4px 0 4px;font-size:18px}.tl p{margin:0;color:var(--mu);font-size:15px}
+.next{border-color:rgba(139,124,255,.4);background:linear-gradient(135deg,rgba(139,124,255,.1),rgba(124,240,212,.05))}
+.next h3{margin:0 0 10px;font-size:22px}.next p{color:#c0c8d8;margin:0 0 10px}
+.contact{text-align:center;padding:96px 0 40px}
+.contact h2{font-size:clamp(30px,5vw,52px)}
+footer{border-top:1px solid var(--line);padding:24px 0;color:var(--mu);font-size:13px;font-family:var(--mono);text-align:center}
+.rv{opacity:0;transform:translateY(14px);transition:opacity .6s,transform .6s}.rv.on{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<nav><div class="wrap"><a class="logo" href="#top">anuja@naik:~$</a>
+<ul><li><a href="#work">Work</a></li><li><a href="#journey">Journey</a></li><li><a href="#stack">Stack</a></li><li><a href="#next">Direction</a></li><li><a href="#contact">Contact</a></li></ul></div></nav>
+
+<header class="wrap hero" id="top">
+<span class="tag"><i></i> B.Tech E&amp;TC · PICT Pune · Open to AI/ML internships</span>
+<h1>ANUJA<br><span>NAIK</span></h1>
+<p class="pos">Engineering student building intelligent systems that connect AI, machine learning, sensing, data and real-world problem solving — from raw signals to deployed applications.</p>
+<div class="btns"><a class="btn p" href="#work">View projects</a><a class="btn" href="https://github.com/anuja-naik" target="_blank" rel="noopener">GitHub</a><a class="btn" href="https://www.linkedin.com/in/anuja-naik06" target="_blank" rel="noopener">LinkedIn</a></div>
+<div class="path" aria-label="Learning progression">
+<div>Electronics &amp; Telecom<small>foundation</small></div><div>Software<small>web · DSA</small></div><div>Machine Learning<small>models · deploy</small></div><div>Signal-based sensing<small>ESP32 · CSI</small></div><div>Intelligent systems<small>digital twins</small></div><div>Agentic AI<small>next →</small></div>
+</div>
+</header>
+
+<section class="wrap" id="work">
+<div class="eyebrow rv">01 — Selected work</div>
+<h2 class="rv">Projects that go from data to a working system.</h2>
+<p class="lead rv">Each one is built end to end — signals or data in, a model in the middle, something you can actually open at the other end.</p>
+<div class="grid g2">
+
+<article class="card proj feat rv">
+<div class="k">Hackathon · 1st place <span class="badge">UpXGen 2024</span></div>
+<h3>Digitwin.AI — AI Predictive Maintenance</h3>
+<div class="flow"><b>sensor data</b><em>→</em><b>Autoencoder</b><em>→</em><b>anomaly score</b><em>→</em><b>Flask API</b><em>→</em><b>live dashboard</b></div>
+<p>A predictive maintenance system built around Digital Twin concepts, using autoencoder models to flag anomalous machine behaviour before it becomes a failure. Won 1st place at the UpXGen Hackathon, PVGCOE Nashik, against teams from across Maharashtra.</p>
+<ul><li>My contribution: the Flask backend and API integration connecting the ML model output to the monitoring dashboard.</li><li>Worked as part of a team — this is a contributed project, not a solo build.</li></ul>
+<div class="chips"><span>Python</span><span>Flask</span><span>REST APIs</span><span>Autoencoder</span><span>Digital Twin</span></div>
+<div class="links"><a href="https://digitwin58.onrender.com/" target="_blank" rel="noopener">Live demo ↗</a><a href="https://github.com/anuja-naik/AI-Predictive-Maintenance-Digital-Twin" target="_blank" rel="noopener">Code ↗</a></div>
+</article>
+
+<article class="card proj rv">
+<div class="k">Embedded ML · Signal processing</div>
+<h3>Human Detection Using WiFi Signals</h3>
+<p>Camera-free sensing: an ESP32 captures WiFi Channel State Information, and a Random Forest classifier learns the signal patterns of human presence and activity such as walking, sitting and standing.</p>
+<ul><li>Feature extraction from wireless signals into an ML prediction pipeline.</li><li>Where my E&amp;TC background and ML meet in one project.</li></ul>
+<div class="chips"><span>Python</span><span>ESP32</span><span>Random Forest</span><span>CSI</span></div>
+<div class="links"><a href="https://github.com/anuja-naik/Human-Detection-Using-WiFi" target="_blank" rel="noopener">Code ↗</a></div>
+</article>
+
+<article class="card proj rv">
+<div class="k">Supervised learning · Deployed</div>
+<h3>CreditWise — Loan Approval Prediction</h3>
+<p>EDA, preprocessing and feature engineering (including quadratic terms) on applicant financial data, then a measured comparison of three classifiers.</p>
+<ul><li>Logistic Regression 87.5% accuracy, Naive Bayes 86.5%, KNN 75.5% — best model selected on results.</li><li>Shipped as an interactive Streamlit app for real-time predictions.</li></ul>
+<div class="chips"><span>Scikit-learn</span><span>Streamlit</span><span>Feature engineering</span></div>
+<div class="links"><a href="https://creditwise-loan-prediction-system-mgd3savehoyqda7kf7rpub.streamlit.app/" target="_blank" rel="noopener">Live demo ↗</a><a href="https://github.com/anuja-naik/CreditWise-Loan-Prediction-System" target="_blank" rel="noopener">Code ↗</a></div>
+</article>
+
+<article class="card proj rv">
+<div class="k">Unsupervised learning · Deployed</div>
+<h3>SmartCart — Customer Segmentation</h3>
+<p>Engineered features such as tenure, total spend and household composition, reduced dimensions with PCA, and chose cluster counts using the elbow method and silhouette analysis.</p>
+<ul><li>Compared K-Means with Agglomerative Clustering; picked K-Means on a higher silhouette score.</li><li>Segments interpreted by income and spending pattern, served in a Streamlit app.</li></ul>
+<div class="chips"><span>K-Means</span><span>PCA</span><span>Scikit-learn</span><span>Streamlit</span></div>
+<div class="links"><a href="https://shareappio-ktudjssrkceywppsmev2ck.streamlit.app/" target="_blank" rel="noopener">Live demo ↗</a><a href="https://github.com/anuja-naik/SmartCart-Customer-Segmentation-System" target="_blank" rel="noopener">Code ↗</a></div>
+</article>
+
+<article class="card proj rv">
+<div class="k">Web · Community project</div>
+<h3>D2D Guidance — Bridging the Next Step</h3>
+<p>A guidance platform for diploma students moving into degree engineering — a path I walked myself. Built the frontend from scratch, live on GitHub Pages, with a TypeScript version in a separate repository.</p>
+<div class="chips"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>TypeScript</span></div>
+<div class="links"><a href="https://anuja-naik.github.io/Bridging-The-Next-Step-D2D-Guidance/" target="_blank" rel="noopener">Live site ↗</a><a href="https://github.com/anuja-naik/Bridging-The-Next-Step-D2D-Guidance" target="_blank" rel="noopener">Code ↗</a></div>
+</article>
+</div>
+</section>
+
+<section class="wrap" id="journey">
+<div class="eyebrow rv">02 — Journey</div>
+<h2 class="rv">From circuits to intelligent systems.</h2>
+<p class="lead rv">Started in electronics, moved into software, and kept following the question: how do machines make sense of the world?</p>
+<div class="tl rv">
+<div class="it"><div class="when">2025 — 2028</div><h3>B.Tech, Electronics &amp; Telecommunication — PICT Pune</h3><p>Diploma-to-Degree pathway. SGPA 9.05 so far.</p></div>
+<div class="it"><div class="when">2024</div><h3>1st place, UpXGen Hackathon — PVGCOE Nashik</h3><p>Contributed the backend and API layer of Digitwin.AI.</p></div>
+<div class="it"><div class="when">2024</div><h3>Technical Intern — Tata Advanced Systems Limited</h3><p>Observed and assisted in a defense-sector engineering environment; exposure to technical documentation, system operations and team workflows.</p></div>
+<div class="it"><div class="when">2022 — 2025</div><h3>Diploma, Electronics &amp; Telecommunication — Cusrow Wadia Institute of Technology</h3><p>96.82 percentile, Diploma Topper.</p></div>
+</div>
+</section>
+
+<section class="wrap" id="stack">
+<div class="eyebrow rv">03 — Toolbox</div>
+<h2 class="rv">What I work with.</h2>
+<p class="lead rv">Grouped by what I use them for, not scored — the projects above are the evidence.</p>
+<div class="grid g3">
+<div class="card sk rv"><h4>AI / ML</h4><div class="chips"><span>Python</span><span>Scikit-learn</span><span>PyTorch</span><span>Supervised learning</span><span>Unsupervised learning</span><span>Deep learning</span></div></div>
+<div class="card sk rv"><h4>Build &amp; deploy</h4><div class="chips"><span>HTML / CSS / JS</span><span>Flask</span><span>REST APIs</span><span>Streamlit</span><span>Vercel</span><span>Netlify</span></div></div>
+<div class="card sk rv"><h4>Foundations</h4><div class="chips"><span>Java (OOP)</span><span>C++</span><span>DSA</span><span>SQL / DBMS</span><span>Git &amp; GitHub</span><span>ESP32</span></div></div>
+</div>
+</section>
+
+<section class="wrap" id="next">
+<div class="eyebrow rv">04 — Direction</div>
+<div class="card next rv">
+<h3>Where I'm heading: Agentic AI</h3>
+<p>My projects so far perceive and predict — signals become features, features become decisions on a dashboard. The natural next step is systems that also act: agents that plan, call tools and close the loop on real problems.</p>
+<p>I'm early on that path and open about it. What I bring is a habit of finishing things — data, model, backend, deployment — plus an electronics background that makes real-world inputs feel familiar rather than abstract.</p>
+</div>
+</section>
+
+<section class="wrap contact" id="contact">
+<div class="eyebrow rv">05 — Contact</div>
+<h2 class="rv">Let's build something intelligent.</h2>
+<p class="lead rv" style="margin-inline:auto">Looking for internships in data science, analytics, AI/ML or full-stack development.</p>
+<div class="btns rv" style="justify-content:center"><a class="btn p" href="mailto:naikanuja80@gmail.com">naikanuja80@gmail.com</a><a class="btn" href="https://github.com/anuja-naik" target="_blank" rel="noopener">GitHub</a><a class="btn" href="https://www.linkedin.com/in/anuja-naik06" target="_blank" rel="noopener">LinkedIn</a></div>
+</section>
+<footer>Anuja Naik · Pune, India · English · Hindi · Marathi</footer>
+
+<script>
+(function(){var els=document.querySelectorAll('.rv');
+if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('on')});return}
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target)}})},{threshold:.12});
+els.forEach(function(e){io.observe(e)});})();
+</script>
+</body>
+</html>
